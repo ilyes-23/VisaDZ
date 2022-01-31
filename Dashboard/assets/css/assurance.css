@@ -1,0 +1,35 @@
+@import url(main.css);
+
+/* assurance section  */
+
+.assurance-section{
+    margin: 80px 0 40px 0;
+} 
+.assurance-section .agence-name{
+    margin: 40px 0;
+
+    display: flex;
+    justify-content: center;
+}
+.assurance-section .agence-name i{
+    margin: 0 10px;
+}
+.assurance-section .agence-name h3{
+    background-color: var(--clr-light);
+    padding: 20px 30px;
+    width: 50%;
+    border-radius: 13px;
+    box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.009),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.005),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.006),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.016),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.036),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+color: var(--clr-main);
+}
+.all-input{
+    width: 100%;
+}
+/* assurance section  */
