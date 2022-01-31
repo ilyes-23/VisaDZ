@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/signin.css">
+        <title>VisaDZ - Signin</title>
+    </head>
+<body>
+    
+    <section class="sign-in">
+        <div class="row sign-row">
+            <div class="row1 col-xl-5 d-none d-xl-block">
+            </div>
+            <div class="col-xl-7 login-section ">
+                <div class="login">
+                    <h5>Login</h5>
+                    <P class="lead">Welcome Back</P>
+                    <form action="">
+                        <label for="">Email Adresse</label>
+                        <div class="input-groupe">
+                            <ion-icon  name="mail-outline"></ion-icon>
+                            <input type="email" placeholder="Enter Your Emaill">
+                        </div>
+                        <label for="">Password</label>
+                        <div class="input-groupe">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input id="pass" type="password" placeholder="Password">
+                        </div>
+                        <span class="showpass"> <ion-icon onclick="showhide()" class="icon" name="eye-off-outline"></ion-icon>
+                             Show password</span>
+                        <a style="width: 200px;float: right;" class="d-flex justify-content-end" href="">Forget password?</a>
+                        <a href="#" class="submit-btn d-flex justify-content-center" type="submit">Sing In</a>
+                    </form>
+                    <hr>
+                    <span>Don't have account? <a href="../Pages/Signup.html">Create Account</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="/assets/js/signup.js"></script>
+</body>
+</html>

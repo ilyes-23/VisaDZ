@@ -1,0 +1,119 @@
+@import url(main.css);
+
+/* allzone-section */
+.allzone-section{
+    background-image:  linear-gradient(to bottom, rgba(1, 2, 10, 0.52), rgba(75, 55, 70, 0.73)), url(/assets/img/usa.jpg);
+    background-position: center;
+    height: 500px;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+
+
+}
+.allzone-section .row{
+    align-items: center;
+}
+.allzone-section .intro-zone {
+    color: var(--clr-light);
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.allzone-section .intro-zone h1{
+    font-size: 3.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+}
+.allzone-section .intro-zone span
+{
+    font-size: 2em;
+}
+.allzone-section  i{
+    font-size: 3em;
+    margin-top: 20px;
+    color: #fff;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    animation-name:scroll ;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes scroll {
+    0%   {
+        transform: translateY(0);
+    }
+    50%   {
+        transform: translateY(50%);
+    }
+    100%   {
+        transform: translateY(0%);
+    }
+  }
+/* allzone-section */
+
+/* zone-info */
+.zone-info{
+    width: 100%;
+    margin: 40px 0 100px 0;
+
+    
+}
+.zone-info .region-info
+{
+    margin: 20px 0px;
+    padding: 20px;
+    /* border: 1px solid var(--clr-main); */
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.zone-info h3{
+    font-size: 25px;
+}
+.zone-info p{
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    line-height: 2;
+}
+.zone-info li{
+    display: inline-block;
+    margin: 5px 10px;
+    padding-left: 20px;
+    list-style: decimal !important;
+    position: relative;
+    font-size: 18px;
+}
+.zone-info li::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr-main);
+    transition: 0.5s;
+}
+.zone-info li:hover:before{
+    background-color: var(--clr-back);
+    width: 100%;
+    height: 2px;
+    top: 100%;
+    left: 70%;
+    transform: translateX(-50%);
+    
+    
+}
+
+/* zone-info */

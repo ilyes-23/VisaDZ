@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/signup.css">
+        <title>VisaDZ - SignUp</title>
+    </head>
+<body>
+        <section class="signup">
+              <!-- Circles which indicates the steps of the form: -->
+            <div class="point d-none d-md-block">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step step-final"></span>
+            </div>
+
+            <form class="singup-form" action="">
+            <h3>SignUp</h3>
+            <span class="text-muted">Create Your Account Now</span>
+                <!-- tab 1  -->
+                <div class="tab">
+                    <ion-icon name="person-outline"></ion-icon> &nbsp;
+                    <span class="text-muted">Personal Infomartion:</span>
+                    <input type="text" placeholder="First Name" name="First Name" required>
+                    <input type="text" placeholder="Last Name" name="Last Name" required>
+                    <input type="text" placeholder="Cite Code" name="Cite Code" required>
+                   
+                </div>
+                <!-- tab 1  -->
+                <!-- tab 2  -->
+                <div class="tab">
+                    <ion-icon name="business-outline"></ion-icon> &nbsp;
+                    <span class="text-muted">Business Infomartion:</span>
+                    <input type="text" placeholder="Agency Name" name="Agency Name" required>
+                    <input type="email" placeholder="Email" name="Email" required>
+                    <input id="pass" type="password" placeholder="*******" name="password" required>
+                    <span class="showpass"> <ion-icon onclick="showhide()"class="icon" name="eye-off-outline"></ion-icon> Show password</span>
+                </div>
+                <!-- tab 2  -->
+
+                <!-- Button  -->
+                <div class="button-bloc">
+                    <div>
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Back</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                    </div>
+                </div>
+                    <!-- Button  -->
+                   <p class="text-center">Already have an account? <a href="Signin.html">Sign in</a></p>
+            </form>
+        </section>
+
+        <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="../assets/js/signup.js"></script>
+</body>
+</html>

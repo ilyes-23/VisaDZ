@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500&display=swap');
+:root
+{
+    --clr-main : #125FCD;
+    --clr-back : #29313C;
+    --font-main: 'Roboto', sans-serif;
+    --clr--overlay : #29313C;
+}
+/* default css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* default css */
+
+/* sign-in section  */
+
+.sign-in
+{
+    width: 100%;
+    height: 100vh;
+}
+
+.sign-row
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+
+}
+.sign-row .row1{
+    background-image: url(../img/login/passport.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+}
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    transition: 0.5s;
+}
+
+.login-section .login{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: -2px 9px 29px 9px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -2px 9px 29px 9px rgba(0,0,0,0.54);
+    -moz-box-shadow: -2px 9px 29px 9px rgba(0,0,0,0.54);
+    transition: 0.5s;
+}
+.login-section .login:hover{
+    transform: scale(1.1);
+}
+.login-section .login h5{
+    text-transform: capitalize; 
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.login-section .login form{
+
+    width: 350px;
+    height: 350px;
+    margin: 10px 10px -60px 10px;
+
+}
+.login-section .login .input-groupe
+{
+    margin: 10px 0;
+    position: relative;
+}
+.login-section .login form input{
+    width:90%;
+    height: 40px;
+    border: 1px solid;
+    border-color: #e6edef;
+    font-size: 14px;
+    color: #898989;
+    margin-left: 21px;
+
+}
+.login-section .login form input::placeholder
+{
+    margin-left: 15px !important;
+}
+.login-section .login form input:focus{
+    outline: none;
+}
+.login-section .login form .input-groupe  ion-icon{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    transition: 0.5s;
+}
+.login-section .login form .input-groupe  ion-icon:hover
+{
+    color: var(--clr-main);
+}
+.login-section .login form a{
+    text-decoration: none;
+}
+.showpass{
+    position: relative;
+    padding-left: 20px;
+}
+
+.showpass ion-icon
+{
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    left: -10px;
+}
+
+.submit-btn{
+    width: 90%;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    background-color: var(--clr-back);
+    padding: 0.675rem 1.75rem;
+    color: #fff;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+.submit-btn:hover
+ {
+     background-color: var(--clr-main);
+     color: #fff;
+ }
+
+ .login-section .login span{
+     text-align: center;
+ }

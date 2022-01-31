@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500&display=swap');
+:root
+{
+    --clr-main : #125FCD;
+    --clr-back : #29313C;
+    --font-main: 'Roboto', sans-serif;
+    --clr--overlay : #29313C;
+    --clr-button : #198754;
+}
+/* default css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+body{
+    overflow-x: hidden;
+    background-color: #f1f1f1;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* default css */
+
+/* signup section  */
+.signup{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url(../img/canda.jpg);
+
+}
+/* signup section  */
+.signup .point{
+    position: absolute;
+    top: 50px;
+}
+
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 50px !important;
+    width: 50px !important;
+    margin: 0 100px !important;
+    background-color: var(--clr-back) !important;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+
+}
+.step::before{
+      content: '';
+      position: absolute;
+      width: 205px;
+      height: 2px;
+      top: 50%;
+      margin-left: 50px;
+      transform: translateY(-50%);
+      background-color: var(--clr-button) !important;
+
+
+}
+.step-final::before{
+      content: none;
+}
+
+  
+.signup .singup-form
+{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: -2px 9px 29px 9px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -2px 9px 29px 9px rgba(92, 103, 128, 0.54);
+    -moz-box-shadow: -2px 9px 29px 9px rgba(0,0,0,0.54);
+    transition: 0.5s;
+}
+.signup .singup-form:hover{
+    transform: scale(1.1);
+}
+.signup .singup-form h3
+{
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 10px 0 5px 20px;
+}
+.signup .singup-form > span
+{
+    margin: 0px 20px 0px 20px !important;
+    line-height: 2;
+}
+
+input {
+    padding: 10px;
+    margin: 10px auto;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+  }
+
+  /* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+}
+  
+/* Hide all steps by default: */
+.tab {
+    display: none;
+    margin-top: 20px;
+}
+.showpass{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.showpass ion-icon
+{
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button-bloc{
+    display: flex;
+    justify-content: center;
+}
+button {
+    background-color: var(--clr-main);
+    color: #ffffff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+    border-radius: 8px;
+    transition: 0.5s;
+    opacity: 0.8; 
+    align-items: center;
+}
+  
+button:hover {
+    opacity: 1;
+    transform: scaleX(1.1);
+}
+  
+#prevBtn {
+    background-color: var(--clr-back);
+}
+  /* Make circles that indicate the steps of the form: */ 
+.step.active {
+    opacity: 1;
+    background-color: var(--clr-button) !important;
+}
+  
+  /* Mark the steps that are finished and valid: */
+.step.finish {
+       background-color: var(--clr-button) !important;
+}

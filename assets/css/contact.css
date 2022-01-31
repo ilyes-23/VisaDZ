@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,900;1,500&display=swap');
+:root
+{
+    --clr-main : #125FCD;
+    --clr-back : #29313C;
+    --font-main: 'Roboto', sans-serif;
+    --clr--overlay : #29313C;
+}
+/* default css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main);
+}
+body{
+    overflow-x: hidden;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* default css */
+
+.contact-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #29313c;
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+.contact-form .contact{
+    background-color: #fff;
+    width: 40%;
+    border-radius: 8px;
+    padding-top: 50px;
+    position: relative;
+
+}
+.contact-form .contact ion-icon
+
+{
+    font-size: 55px;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+
+}
+.contact-form h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+.contact-form span
+ {
+     font-size: 18px;
+     font-weight: 300;
+     
+ }
+ .contact-form  form{
+     width: 100%;
+     margin: 20px 0;
+
+ }
+ .contact-form  form input,
+ .contact-form  form textarea{
+     width: 90%;
+     max-width: 300px !important;
+     margin: 10px;
+     border: none;
+     border: 1px solid var(--clr-back);
+     border-radius: 8px;
+     outline: none;
+     padding: 5px;
+     transition: 0.5s;
+
+ }
+ .contact-form  form input::placeholder{
+    padding-left: 20px;
+    letter-spacing: 1px;
+    color: var(--clr-back);
+ }
+ .contact-form  form input[type=submit]{
+     
+    background-color: var(--clr-back);
+    color: #fff;
+ }
+
+ .contact-form  form input[type=submit]:hover{
+     background-color: var(--clr-main);
+ }
+
+ .contact-form  form input:focus,
+ .contact-form  form textarea:focus{
+     border-color: var(--clr-main);
+ }
